@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oxepaullete <> Studio</title>
+
+  <!-- ── External Stylesheets ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ── Custom Stylesheet ── -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       TICKER BAR — Scrolling Status Line
+  ═══════════════════════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+
+      <!-- Set 1 -->
+      <span class="ticker-item"><span>★</span> Open for commissions</span>
+      <span class="ticker-item"><span>//</span> @oxepaullete</span>
+      <span class="ticker-item"><span>★</span> Turning Caffeine into Code</span>
+      <span class="ticker-item"><span>//</span> 28 Satisfied clients</span>
+      <span class="ticker-item"><span>★</span> 23 Projects completed</span>
+      <span class="ticker-item"><span>//</span> 4 Years of Experience</span>
+
+      <!-- Set 2 (Duplicate for seamless loop) -->
+      <span class="ticker-item"><span>★</span> Open for commissions</span>
+      <span class="ticker-item"><span>//</span> @oxepaullete</span>
+      <span class="ticker-item"><span>★</span> Turning Caffeine into Code</span>
+      <span class="ticker-item"><span>//</span> 28 Satisfied clients</span>
+      <span class="ticker-item"><span>★</span> 23 Projects completed</span>
+      <span class="ticker-item"><span>//</span> 4 Years of Experience</span>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        Oxepaullete <span class="dot"><></span> Studio
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-md-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO / MAIN CONTENT
+  ═══════════════════════════════════════════════════ -->
+  <main class="hero-section">
+
+    <!-- Background Giant Text -->
+    <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+
+    <div class="container hero-content">
+      <div class="row align-items-start g-4 justify-content-center">
+
+
+        <!-- ── LEFT: Profile Card ─────────────────────────── -->
+        <div class="col-12 col-md-7 col-lg-6 position-relative">
+          <span class="side-label">Oxepaullete Studio — 2026</span>
+
+          <div class="profile-card">
+            <div class="card-top-bar"></div>
+
+            <div class="card-inner">
+
+              <!-- Avatar -->
+              <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                  <img src="assets/images/oxepaullete-hero.png" alt="Oxe Paullete" />
+                </div>
+              </div>
+
+              <!-- Eyebrow -->
+              <p class="card-eyebrow">Developer &amp; IT Enthusiasts</p>
+
+              <!-- Headline -->
+              <h1 class="card-headline">
+                Turning Caffeine Into Code
+              </h1>
+
+              <!-- Description -->
+              <p class="card-desc">
+                I build clean, no-cap interfaces where design and code actually
+                hit different. Currently deep in UI systems, responsive layouts,
+                and leveling up my front-end game - no tutorial left behind.
+              </p>
+
+              <!-- Tags -->
+              <div class="tags-row">
+                <span class="tag">HTML / CSS</span>
+                <span class="tag">Javascript</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Python</span>
+                <span class="tag">UI / UX Design</span>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="d-flex gap-2 flex-wrap">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Contact Me
+                </button>
+                <a href="#" class="btn btn-ghost">View Projects</a>
+              </div>
+
+              <!-- Stats -->
+              <div class="stats-row">
+                <div class="stat-item">
+                  <div class="stat-num">23</div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">04</div>
+                  <div class="stat-label">Years</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">28</div>
+                  <div class="stat-label">Clients</div>
+                </div>
+              </div>
+
+            </div><!-- /.card-inner -->
+          </div><!-- /.profile-card -->
+        </div><!-- /.col LEFT -->
+
+
+        <!-- ── RIGHT: Info Panel ──────────────────────────── -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="info-panel">
+
+            <div class="info-block">
+              <div class="info-block-label">Status</div>
+              <div class="info-block-value">
+                <span class="status-dot"></span>Open for Commissions
+              </div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-block-label">Currently Learning</div>
+              <div class="info-block-value large">AI Interaction Design</div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-block-label">Location</div>
+              <div class="info-block-value">Metro Manila, Philippines</div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-block-label">Stack</div>
+              <div class="info-block-value">
+                HTML · CSS · JavaScript · Bootstrap · Python
+              </div>
+            </div>
+
+            <div class="info-block">
+              <div class="info-block-label">Last Updated</div>
+              <div class="info-block-value">2026.04.30</div>
+            </div>
+
+          </div><!-- /.info-panel -->
+        </div><!-- /.col RIGHT -->
+
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       CONTACT MODAL
+  ═══════════════════════════════════════════════════ -->
+  <div
+    class="modal fade"
+    id="contactModal"
+    tabindex="-1"
+    aria-labelledby="contactModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="contactModalLabel">Contact Me</h2>
+            <div class="modal-subtitle">// Send me a message — I'll respond within 24h</div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form id="contactForm" class="needs-validation" novalidate>
+
+            <!-- Name Field -->
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactName"
+                placeholder="Tuff Human"
+                required
+                autocomplete="name"
+              />
+              <div class="invalid-feedback">
+                // Please enter your name.
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="contactEmail"
+                placeholder="tuffhuman@example.com"
+                required
+                autocomplete="email"
+              />
+              <div class="invalid-feedback">
+                // Please enter a valid email address.
+              </div>
+            </div>
+
+            <!-- Message Field -->
+            <div class="mb-1">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="contactMessage"
+                placeholder="Write at least 20 characters…"
+                minlength="20"
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                // Message must be at least 20 characters.
+              </div>
+              <div class="char-counter" id="charCounter">0 / 20 min</div>
+            </div>
+
+          </form>
+        </div><!-- /.modal-body -->
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary" id="submitBtn">
+            Send Message
+          </button>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div>
+  </div><!-- /#contactModal -->
+
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Oxepaullete &lt;&gt; Studio</div>
+        <div class="footer-copy">
+          &copy; 2026 — Built with <span>Bootstrap 5.3</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ── Scripts ── -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="validation.js"></script>
+
+
+</body>
+</html>
