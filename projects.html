@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Oxepaullete Studio</title>
+
+  <!-- ── External Stylesheets ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ── Page Stylesheet ── -->
+  <link rel="stylesheet" href="projects.css" />
+
+</head>
+<body>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       TICKER BAR — Scrolling Status Line
+  ═══════════════════════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+
+      <!-- Set 1 -->
+      <span class="ticker-item"><span>★</span> Open for commissions</span>
+      <span class="ticker-item"><span>//</span> @oxepaullete</span>
+      <span class="ticker-item"><span>★</span> Turning Caffeine into Code</span>
+      <span class="ticker-item"><span>//</span> 28 Satisfied clients</span>
+      <span class="ticker-item"><span>★</span> 20 Projects Handled</span>
+      <span class="ticker-item"><span>//</span> 4 Years of Experience</span>
+
+      <!-- Set 2 (Duplicate for seamless loop) -->
+      <span class="ticker-item"><span>★</span> Open for commissions</span>
+      <span class="ticker-item"><span>//</span> @oxepaullete</span>
+      <span class="ticker-item"><span>★</span> Turning Caffeine into Code</span>
+      <span class="ticker-item"><span>//</span> 28 Satisfied clients</span>
+      <span class="ticker-item"><span>★</span> 20 Projects Handled</span>
+      <span class="ticker-item"><span>//</span> 4 Years of Experience</span>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid px-4">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        Oxepaullete <span class="dot"><></span> Studio
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-md-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       PAGE HEADER
+  ═══════════════════════════════════════════════════ -->
+  <header class="page-header">
+
+    <!-- Background ghost text -->
+    <div class="page-header-bg" aria-hidden="true">WORKS</div>
+
+    <div class="container-fluid px-4">
+      <div class="page-header-inner">
+
+        <p class="page-eyebrow">// Project Dashboard</p>
+        <h1 class="page-title">Selected Works</h1>
+        <p class="page-desc">
+          A collection of projects — from UI systems to full-stack builds.
+          All placeholders for now, but the grind is real.
+        </p>
+        <div class="project-count">
+          <span>20</span> Projects listed
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       PROJECT DASHBOARD / CAROUSEL
+  ═══════════════════════════════════════════════════ -->
+  <section class="dashboard-section" aria-label="Project carousel">
+
+    <!-- Section label + nav buttons -->
+    <div class="section-row">
+      <div class="section-label">All Projects</div>
+      <div class="carousel-nav" role="group" aria-label="Carousel navigation">
+        <button class="nav-btn" id="prevBtn" aria-label="Scroll left">&#8592;</button>
+        <button class="nav-btn" id="nextBtn" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </div>
+
+    <!-- Carousel container -->
+    <div class="carousel-outer">
+      <div class="carousel-track" id="carouselTrack" role="list">
+
+
+        <!-- ─────────────────────────────────────────
+             PROJECT CARDS (1–20)
+             data-progress sets the progress bar fill
+        ───────────────────────────────────────── -->
+
+        <!-- Card 01 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 01</div>
+            <h2 class="card-title-text">Portfolio Hub</h2>
+            <p class="card-description">Personal portfolio dashboard with dynamic project listing and contact form integration.</p>
+            <div class="card-tags">
+              <span class="card-tag">UI/UX</span>
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Bootstrap</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="85"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 02 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 02</div>
+            <h2 class="card-title-text">Brand Identity Kit</h2>
+            <p class="card-description">Full brand identity system including logo variants, color palette, and typography guide.</p>
+            <div class="card-tags">
+              <span class="card-tag">Branding</span>
+              <span class="card-tag">Design</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="100"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 03 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 03</div>
+            <h2 class="card-title-text">E-Commerce UI</h2>
+            <p class="card-description">Responsive online store UI with product grid, cart drawer, and checkout flow.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">UI/UX</span>
+              <span class="card-tag">CSS</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="40"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 04 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 04</div>
+            <h2 class="card-title-text">AI Chat Interface</h2>
+            <p class="card-description">Minimal chat UI for an AI assistant with streaming response animation and history panel.</p>
+            <div class="card-tags">
+              <span class="card-tag">App</span>
+              <span class="card-tag">AI</span>
+              <span class="card-tag">JS</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 05 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 05</div>
+            <h2 class="card-title-text">Dashboard Analytics</h2>
+            <p class="card-description">Admin panel with data visualization charts, KPI cards, and real-time metrics layout.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Data</span>
+              <span class="card-tag">UI/UX</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="60"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 06 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 06</div>
+            <h2 class="card-title-text">Mobile App Prototype</h2>
+            <p class="card-description">High-fidelity mobile app prototype for a productivity tool with task and habit tracking.</p>
+            <div class="card-tags">
+              <span class="card-tag">App</span>
+              <span class="card-tag">Mobile</span>
+              <span class="card-tag">Figma</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="100"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 07 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 07</div>
+            <h2 class="card-title-text">Blog CMS Template</h2>
+            <p class="card-description">Clean editorial blog template with dark mode, syntax highlighting, and tag filtering.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">CMS</span>
+              <span class="card-tag">Design</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 08 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 08</div>
+            <h2 class="card-title-text">Design System</h2>
+            <p class="card-description">Component library and design tokens documentation site for a multi-product UI system.</p>
+            <div class="card-tags">
+              <span class="card-tag">UI/UX</span>
+              <span class="card-tag">Design</span>
+              <span class="card-tag">Docs</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="25"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 09 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 09</div>
+            <h2 class="card-title-text">Landing Page Kit</h2>
+            <p class="card-description">Modular landing page sections — hero, features, pricing, FAQ, and footer blocks.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Marketing</span>
+              <span class="card-tag">HTML</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="100"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 10 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 10</div>
+            <h2 class="card-title-text">Crypto Tracker UI</h2>
+            <p class="card-description">Real-time crypto price dashboard with sparkline charts, watchlist, and alert system.</p>
+            <div class="card-tags">
+              <span class="card-tag">App</span>
+              <span class="card-tag">Data</span>
+              <span class="card-tag">JS</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 11 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 11</div>
+            <h2 class="card-title-text">Weather App</h2>
+            <p class="card-description">Minimal weather app with location search, 7-day forecast, and animated condition icons.</p>
+            <div class="card-tags">
+              <span class="card-tag">App</span>
+              <span class="card-tag">API</span>
+              <span class="card-tag">JS</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="70"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 12 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 12</div>
+            <h2 class="card-title-text">Event Platform UI</h2>
+            <p class="card-description">Event discovery and booking platform with map integration and ticketing flow.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">UI/UX</span>
+              <span class="card-tag">Maps</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 13 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 13</div>
+            <h2 class="card-title-text">Restaurant Menu</h2>
+            <p class="card-description">Digital restaurant menu with category filters, dietary tags, and QR code generation.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Design</span>
+              <span class="card-tag">Print</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="100"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 14 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 14</div>
+            <h2 class="card-title-text">Python Automation</h2>
+            <p class="card-description">Script suite for automating repetitive file management and data processing tasks.</p>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">CLI</span>
+              <span class="card-tag">Dev</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="50"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 15 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 15</div>
+            <h2 class="card-title-text">Social Media Kit</h2>
+            <p class="card-description">Templated social media asset pack — posts, stories, and banner ads in multiple sizes.</p>
+            <div class="card-tags">
+              <span class="card-tag">Design</span>
+              <span class="card-tag">Branding</span>
+              <span class="card-tag">Social</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="100"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 16 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 16</div>
+            <h2 class="card-title-text">Task Manager App</h2>
+            <p class="card-description">Kanban-style task manager with drag-and-drop, due dates, and priority tagging.</p>
+            <div class="card-tags">
+              <span class="card-tag">App</span>
+              <span class="card-tag">JS</span>
+              <span class="card-tag">UI/UX</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 17 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 17</div>
+            <h2 class="card-title-text">Portfolio v1 Archive</h2>
+            <p class="card-description">Archived first version of personal portfolio — preserved as a milestone reference.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Archive</span>
+              <span class="card-tag">HTML</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="100"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge completed">Completed</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 18 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 18</div>
+            <h2 class="card-title-text">Fitness Tracker UI</h2>
+            <p class="card-description">Mobile-first fitness tracking interface with workout logging, progress charts, and goals.</p>
+            <div class="card-tags">
+              <span class="card-tag">App</span>
+              <span class="card-tag">Mobile</span>
+              <span class="card-tag">Health</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 19 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 19</div>
+            <h2 class="card-title-text">Photography Site</h2>
+            <p class="card-description">Minimal photography portfolio with masonry grid, lightbox viewer, and collection filtering.</p>
+            <div class="card-tags">
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Gallery</span>
+              <span class="card-tag">UI/UX</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="30"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+        <!-- Card 20 -->
+        <article class="project-card" role="listitem">
+          <div class="card-accent-bar"></div>
+          <div class="card-body-inner">
+            <div class="card-number">/ 20</div>
+            <h2 class="card-title-text">Mystery Project</h2>
+            <p class="card-description">Something big is cooking. Details dropping soon — stay tuned and follow @oxepaullete.</p>
+            <div class="card-tags">
+              <span class="card-tag">???</span>
+              <span class="card-tag">Stealth</span>
+            </div>
+            <div class="card-progress">
+              <div class="card-progress-fill" data-progress="0"></div>
+            </div>
+            <div class="card-footer-row">
+              <span class="status-badge coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <a href="#" class="view-btn">View Project</a>
+          </div>
+        </article>
+
+
+      </div><!-- /#carouselTrack -->
+    </div><!-- /.carousel-outer -->
+
+  </section><!-- /.dashboard-section -->
+
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Oxepaullete &lt;&gt; Studio</div>
+      <div class="footer-copy">
+        &copy; 2026 — Built with <span>Bootstrap 5.3</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ── Scripts ── -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="projects.js"></script>
+
+
+</body>
+</html>
